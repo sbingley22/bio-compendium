@@ -67,5 +67,95 @@ export const basicEnteries = {
       'If destroyed or bypassed, the adaptive immune system is severely delayed.',
       'Vulnerable while migrating to lymph nodes with captured antigens.',
     ]
+  },
+
+  "macrophages": {
+    category: 'allies',
+    background: 'macrophage-idle.png',
+    text: [
+      'Macrophages are large, versatile cells that engulf and digest pathogens, dead cells, and debris in a process called phagocytosis.',
+      'They release chemical signals (cytokines) to summon reinforcements and help coordinate the immune response.',
+      'Some macrophages stay in tissues long-term, acting as sentinels ready to respond immediately to invaders.',
+      '*Strengths:*',
+      'Durable frontline units capable of absorbing damage.',
+      'Can heal slightly by consuming enemies and debris.',
+      'Continuously release signals to attract other immune cells.',
+      '*Weaknesses:*',
+      'Moderate attack speed and low burst damage.',
+      'Can be overwhelmed by very large numbers of pathogens.',
+      'Susceptible to certain pathogen evasion tactics (like TB hiding inside them).',
+    ]
+  },
+
+  "neutrophils": {
+    category: 'allies',
+    background: 'neutrophil-idle.png',
+    text: [
+      'Neutrophils are the most abundant white blood cells and among the first to arrive at infection sites.',
+      'They swarm enemies, unleashing reactive oxygen species and sticky DNA nets to trap and kill pathogens.',
+      'Short-lived and expendable, they sacrifice themselves in large numbers to control infections early.',
+      '*Strengths:*',
+      'Fastest to respond — floods the battlefield within hours.',
+      'High damage output against bacteria and fungi.',
+      'Can form traps that immobilize enemies.',
+      '*Weaknesses:*',
+      'Very short lifespan — die within 1-2 days after activation.',
+      'Not effective against viruses hiding inside cells.',
+      'Large numbers needed for significant effect.',
+    ]
+  },
+
+  "eosinophils": {
+    category: 'allies',
+    background: 'eosinophil-idle.png',
+    text: [
+      'Eosinophils specialize in combating parasites and regulating allergic reactions.',
+      'They attack using toxic proteins and inflammatory molecules that damage large invaders.',
+      'They also help modulate the immune response to avoid excessive inflammation.',
+      '*Strengths:*',
+      'Highly effective against parasitic worms and similar large enemies.',
+      'Can apply damage over time with toxic granules.',
+      'Supports in controlling allergic responses.',
+      '*Weaknesses:*',
+      'Weak against bacteria and viruses.',
+      'Limited presence under normal conditions (activated mostly in allergies/parasites).',
+      'Collateral damage risk — their toxins can harm surrounding tissues.',
+    ]
+  },
+
+  "basophils": {
+    category: 'allies',
+    background: 'basophil-idle.png',
+    text: [
+      'Basophils and mast cells release histamine and other chemicals that trigger inflammation and recruit other immune cells.',
+      'They are key players in allergic reactions and in amplifying the body’s defense signals.',
+      'While not strong fighters themselves, they shape the battlefield for allies.',
+      '*Strengths:*',
+      'Can create area effects that slow enemies or boost allies.',
+      'Initiate strong inflammatory responses to draw reinforcements.',
+      'Useful in allergic or parasitic defenses.',
+      '*Weaknesses:*',
+      'Low direct attack power.',
+      'Effects can cause friendly fire (allergy-style overreactions).',
+      'Rare in circulation — not always available for battle.',
+    ]
+  },
+
+  "regulatory-t-cells": {
+    category: 'allies',
+    background: 'regulatory-t-cell-idle.png',
+    text: [
+      'Regulatory T cells (Tregs) help prevent the immune system from overreacting and attacking the body’s own tissues.',
+      'They suppress excessive inflammation and maintain immune tolerance, preventing autoimmunity.',
+      'In gameplay, they serve as controllers that balance offense and defense.',
+      '*Strengths:*',
+      'Prevents friendly fire and reduces collateral tissue damage.',
+      'Can calm an overactive immune system to avoid burnout.',
+      'Essential for maintaining long-term stability during prolonged battles.',
+      '*Weaknesses:*',
+      'Weak in direct combat and cannot attack pathogens themselves.',
+      'If suppressed, autoimmunity or uncontrolled inflammation can occur.',
+      'Overuse can lead to weak immune responses, letting enemies thrive.',
+    ]
   }
 }
