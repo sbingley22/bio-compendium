@@ -65,10 +65,9 @@ h1 {
 }
 
 .subject .container {
-  max-width: 80%;
+  max-width: 65%;
   box-sizing: border-box;
   height: 100%;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -87,4 +86,10 @@ h1 {
     1px -1px 0 black,
     -1px  1px 0 black,
     1px  1px 0 black;
+}
+
+@media(max-width: 768px) {
+  .subject .container {
+    max-width: 80%;
+  }
 }

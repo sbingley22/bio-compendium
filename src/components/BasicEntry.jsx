@@ -16,9 +16,15 @@ function BasicEntry({ basicEntry }) {
       }}
     >
       <div className='container'>
-        {entry.text.map((p, index) => (
-          <p key={'text'+index}>{p}</p>
-        ))}
+        {entry.text.map((p, index) => {
+          const isBold = p[0] === '*' && p[p.length -1] === '*'
+          const content = isBold ? p.slice(1,-1) : p
+          return (
+            <p key={'text'+index}>
+              {isBold ? <strong><i>{content}</i></strong> : content}
+            </p>
+          )
+        })}
       </div>
     </div>
   )

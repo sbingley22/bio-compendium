@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../css/compendium.css'
-import { basicEnteries } from './data/enteries'
+import { basicEnteries } from '../data/enteries'
 import BasicEntry from "./BasicEntry"
 
 const allies = []
@@ -33,12 +33,16 @@ function Compendium() {
 
         <div className='main-subjects'>
           {showSubject === 'allies' && <div>
-            {allies.map((e) => (
-              <button
-                key={e}
-                onClick={()=>setBasicEntry(e)}
-              >{e}</button>
-            ))}
+            {allies.map((e) => {
+              const formatted = e.replaceAll('-', ' ').replace(/\b\w/g, char => char.toUpperCase());
+              
+              return (
+                <button
+                  key={e}
+                  onClick={()=>setBasicEntry(e)}
+                >{formatted}</button>
+              )
+            })}
           </div>}
         </div>
       </div>

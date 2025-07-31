@@ -71,7 +71,7 @@ export const basicEnteries = {
 
   "macrophages": {
     category: 'allies',
-    background: 'macrophage-idle.png',
+    background: './macrophage-idle.png',
     text: [
       'Macrophages are large, versatile cells that engulf and digest pathogens, dead cells, and debris in a process called phagocytosis.',
       'They release chemical signals (cytokines) to summon reinforcements and help coordinate the immune response.',
