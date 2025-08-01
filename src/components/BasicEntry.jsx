@@ -1,11 +1,13 @@
-import { useState } from 'react'
 import '../css/compendium.css'
-import { basicEnteries } from '../data/enteries'
+import { allies, pathogens } from '../data/enteries'
 
-function BasicEntry({ basicEntry }) {
-  const entry = basicEnteries[basicEntry]
+function BasicEntry({ basicEntry, category }) {
+  let entry = null
+  if (category === 'allies') entry = allies[basicEntry]
+  else if (category === 'enemies') entry = pathogens[basicEntry]
   if (!entry) {
-    console.warn("Cannot find entry: ", entry)
+    //console.warn("Cannot find entry: ", entry, basicEntry, category)
+    return
   }
 
   return (
@@ -16,6 +18,7 @@ function BasicEntry({ basicEntry }) {
       }}
     >
       <div className='container'>
+        {entry.type && <p><strong>{entry.type.toUpperCase()}</strong></p>}
         {entry.text.map((p, index) => {
           const isBold = p[0] === '*' && p[p.length -1] === '*'
           const content = isBold ? p.slice(1,-1) : p

@@ -1,16 +1,7 @@
 import { useState } from 'react'
 import '../css/compendium.css'
-import { basicEnteries } from '../data/enteries'
+import { allies, pathogens } from '../data/enteries'
 import BasicEntry from "./BasicEntry"
-
-const allies = []
-const enemies = []
-
-Object.keys(basicEnteries).forEach(name => {
-  const entry = basicEnteries[name]
-  if (entry.category === 'allies') allies.push(name)
-  else if (entry.category === 'enemies') enemies.push(name)
-})
 
 function Compendium() {
   const [showSubject, setShowSubject] = useState(null)
@@ -33,7 +24,20 @@ function Compendium() {
 
         <div className='main-subjects'>
           {showSubject === 'allies' && <div>
-            {allies.map((e) => {
+            {Object.keys(allies).map((e) => {
+              const formatted = e.replaceAll('-', ' ').replace(/\b\w/g, char => char.toUpperCase());
+              
+              return (
+                <button
+                  key={e}
+                  onClick={()=>setBasicEntry(e)}
+                >{formatted}</button>
+              )
+            })}
+          </div>}
+
+          {showSubject === 'enemies' && <div>
+            {Object.keys(pathogens).map((e) => {
               const formatted = e.replaceAll('-', ' ').replace(/\b\w/g, char => char.toUpperCase());
               
               return (
@@ -51,6 +55,7 @@ function Compendium() {
         {basicEntry !==null && 
           <BasicEntry
             basicEntry={basicEntry}
+            category={showSubject}
         />}
       </div>
     </div>
