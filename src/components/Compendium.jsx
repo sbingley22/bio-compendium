@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import '../css/compendium.css'
-import { allies, pathogens } from '../data/enteries'
+import { allies, pathogens, battles } from '../data/enteries'
 import BasicEntry from "./BasicEntry"
+import Battles from './Battles'
 
 function Compendium() {
   const [showSubject, setShowSubject] = useState(null)
@@ -16,6 +17,7 @@ function Compendium() {
 
       <div className='navigation'>
         <h1>Bio Compendium</h1>
+
         <div className='main-categories'>
           <button onClick={()=>handleSubjectClick('allies')}>Allies</button>
           <button onClick={()=>handleSubjectClick('enemies')}>Enemies</button>
@@ -48,15 +50,34 @@ function Compendium() {
               )
             })}
           </div>}
+
+          {showSubject === 'battles' && <div>
+            {Object.keys(battles).map((e) => {
+              const formatted = e.replaceAll('-', ' ').replace(/\b\w/g, char => char.toUpperCase());
+              
+              return (
+                <button
+                  key={e}
+                  onClick={()=>setBasicEntry(e)}
+                >{formatted}</button>
+              )
+            })}
+          </div>}
         </div>
       </div>
 
       <div className='subjects'>
         {basicEntry !==null && 
-          <BasicEntry
-            basicEntry={basicEntry}
-            category={showSubject}
-        />}
+          showSubject === 'battles' ? 
+            <Battles
+              basicEntry={basicEntry}
+            />
+          :
+            <BasicEntry
+              basicEntry={basicEntry}
+              category={showSubject}
+            />
+        }
       </div>
     </div>
   )

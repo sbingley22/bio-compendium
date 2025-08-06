@@ -316,5 +316,52 @@ export const pathogens = {
       'Do not actively evade immune cells — purely passive.',
       'Few types exist, limiting their variety in battle.',
     ]
+  },
+
+  "biofilm-clusters": {
+    category: 'enemies',
+    background: 'biofilm-idle.png',
+    text: [
+      'Biofilms are fortified communities of bacteria encased in a sticky protective layer.',
+      'They form on surfaces like teeth, wounds, or implants, shielding bacteria from immune attacks and antibiotics.',
+      'Breaking through the biofilm requires coordinated assaults and persistent immune pressure.',
+      '*Strengths:*',
+      'Highly resistant to phagocytosis and antibodies.',
+      'Can regenerate even after partial destruction.',
+      'Releases bacteria slowly, sustaining long-term infection.',
+      '*Weaknesses:*',
+      'Immobile — must stay attached to surfaces.',
+      'Vulnerable to strong inflammatory responses once the barrier is breached.',
+      'Takes time to form — vulnerable in early stages.',
+    ]
+  },
+
+  "cancer-cells": {
+    category: 'enemies',
+    background: 'cancer-cell-idle.png',
+    text: [
+      'Cancer cells are mutated host cells that grow uncontrollably and evade normal immune surveillance.',
+      'They exploit "self" markers to hide from immune cells and secrete signals that suppress immune responses.',
+      'NK cells and cytotoxic T cells are primary defenders against them, but some cancers adapt to avoid detection entirely.',
+      '*Strengths:*',
+      'Uses "self" disguise — hard to detect as an enemy.',
+      'Rapid uncontrolled growth and invasion of tissues.',
+      'Can suppress or exhaust nearby immune cells.',
+      '*Weaknesses:*',
+      'Vulnerable to activated NK cells and cytotoxic T cells.',
+      'Exposed when mutations remove normal "self" markers.',
+      'Targetable by antibodies or immune therapies when identified.',
+    ]
   }
+}
+
+export const battles = {
+  "natural-killer-vs-cancer cells": {
+    category: 'battle',
+    background: 'nk-vs-cancer.png',
+    text: [
+      'The natural killer cell gets up close and personal with a suspicious cell. If the cell does not greet the NKs hand shake satisfactory then the NK cell eliminates the defective / cancerous / infected cell.'
+    ]
+  }
+
 }
