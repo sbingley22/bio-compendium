@@ -4,16 +4,13 @@ import { battles } from '../data/enteries'
 function Battles({ basicEntry }) {
   const entry = battles[basicEntry]
   if (!entry) {
-    //console.warn("Cannot find entry: ", entry, basicEntry, category)
+    console.warn("Cannot find entry: ", entry, basicEntry)
     return
   }
+  console.log("battle entry: ", basicEntry)
 
   return (
     <div 
-      style={{
-        height: '100%',
-        overflowY: 'auto',
-      }}
     >
       <img src={entry.background} />
 

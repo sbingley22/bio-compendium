@@ -7,38 +7,43 @@ A website describing immune cells, pathogens, and there function.
 
 To Do:
 -Write down exactly the characteristics and design of each immune cell.
--Design Neutrophil
--Design Natural Killer Cells
--Design Macrophages
--Design Eosinophils
--Design Basophils
 -Design Dendritic Cells
--Design Plasma B Cells
--Design Memory B Cells
--Design Cytotoxic T Cells
--Design Helper T Cells
--Design Regulatory T Cells
--Design Memory T Cells
 -Render each cell using drawing / daz / blender / ai.
--Render Neutrophil
--Render Natural Killer Cells
--Render Macrophages
--Render Eosinophils
--Render Basophils
--Render Dendritic Cells
--Render Plasma B Cells
--Render Memory B Cells
 -Render Cytotoxic T Cells
+-Render Memory T Cells
 -Render Helper T Cells
 -Render Regulatory T Cells
--Render Memory T Cells
+-Render Dendritic Cells
+
 -Make sure info matches cell types.
+-Reorganise info screen to have card float right, text left, then aditional battle info and images below.
+-Create battles for each cell type demonstrating their abilities.
 -Design pathogens.
 -Render pathogens.
--Create battles for each cell type demonstrating their abilities.
 
 ~~
 Done:
 -Create functionality for viewing pathogens, immune cells, and battles
 -Create placeholder info for each entry
+-Design Neutrophil : Orc Beserker
+-Design Natural Killer Cells : Ranger Cloaked Assassin
+-Design Macrophages : Werewolf
+-Design Eosinophils : Wizard
+-Design Basophils : Alchemist
+-Design Microglia : Mindflayer
+-Design Plasma B Cells : Steampunk Handcannon Woman with antibody backpack and pouches
+-Design Memory B Cells : Steampunk Large Cranium with lots of books, scared from past encounters, old.
+-Design Cytotoxic T Cells : Elf lady with red goggles, daggers / scythe.
+-Design Helper T Cells : Elf Scout / Commander
+-Design Memory T Cells : Elf Large Cranium etc
+-Design Regulatory T Cells : Elf Bard (violin)
+-Render Neutrophil
+-Render Macrophages
+-Render Microglia Cells
+-Render Natural Killer Cells
+-Render Eosinophils
+-Render Basophils
+-Render Plasma B Cells
+-Render Memory B Cells
+-Render a card version that includes background.
 ~~
