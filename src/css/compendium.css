@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100vw;
   min-height: 100vh;
-  background-image: url("./bg-veins.png");
+  background-image: url("/bg-veins.png");
   background-repeat: repeat;
   padding: 4px;
   text-align: center;
@@ -19,11 +19,6 @@
 
 .navigation {
   width: 100%;
-}
-
-.subjects {
-  /*overflow-y: auto;*/
-  /*height: 100%;*/
 }
 
 h1 {
