@@ -38,7 +38,7 @@ function BasicEntry({ basicEntry, category }) {
       </div>
 
       {entry.battles && entry.battles.map((battle, index) => {
-        console.log(battle, battles[battle])
+        //console.log(battle, battles[battle])
         return (<Battles
           key={"battle" + index}
           basicEntry={battle}

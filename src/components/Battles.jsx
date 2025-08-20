@@ -7,7 +7,7 @@ function Battles({ basicEntry }) {
     console.warn("Cannot find entry: ", entry, basicEntry)
     return
   }
-  console.log("battle entry: ", basicEntry)
+  //console.log("battle entry: ", basicEntry)
 
   return (
     <div 

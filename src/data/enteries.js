@@ -124,20 +124,20 @@ export const allies = {
   "dendritic-cells": {
     category: 'allies',
     type: 'innate',
-    architype: '',
+    architype: 'scout ranger',
     background: 'dendritic-card.png',
     text: [
-      'Dendritic cells act as scouts and messengers of the immune system, patrolling tissues for invaders.',
-      'When they detect a pathogen, they capture pieces of it (antigens) and travel to lymph nodes to present them to T cells, initiating the adaptive response.',
-      'They are crucial for activating naive T cells and orchestrating the broader immune attack.',
+      'Dendritic cells are the immune system’s vigilant rangers and messengers, roaming the wilds on constant patrol for invaders.',
+      'When they encounter an enemy, they capture fragments of it and then travel to the great gathering halls (lymph nodes) to present their findings to the commanders — the T cells.',
+      'By delivering this intelligence, they ignite the adaptive army into action, ensuring a targeted and organized response.',
       '*Strengths:*',
-      'Detects and identifies invading pathogens early.',
-      'Activates T cells and jumpstarts the adaptive immune response.',
-      'Bridges the gap between innate and adaptive immunity.',
+      'Expert scouts — detect and identify pathogens early.',
+      'Essential messengers that awaken naive T cells.',
+      'Form the crucial bridge between innate and adaptive immunity.',
       '*Weaknesses:*',
-      'Low offensive power — cannot fight directly.',
-      'If destroyed or bypassed, the adaptive immune system is severely delayed.',
-      'Vulnerable while migrating to lymph nodes with captured antigens.',
+      'Fragile in direct combat — cannot fight enemies themselves.',
+      'If intercepted or destroyed, the adaptive response is delayed.',
+      'Vulnerable during their long journey to the lymph nodes.'
     ]
   },
 
@@ -231,7 +231,7 @@ export const allies = {
     category: 'allies',
     type: 'adaptive',
     architype: 'elven bard',
-    background: 't-regulatory-card.png',
+    background: 't-reg-card.png',
     text: [
       'Suppressor T cells (Tregs) help prevent the immune system from overreacting and attacking the body’s own tissues.',
       'They come in towards the end of the battle and play tranquil, calming songs to the rest of the immune system to clam them down and prevent autoimmunity and increase immune tolerance',
@@ -260,26 +260,6 @@ export const allies = {
       'Needs to have succesfully fought the pathogen first'
     ]
   },
-
-  "complement-proteins": {
-    category: 'allies',
-    type: 'innate',
-    architype: 'traps',
-    background: 'complement-proteins-card.png',
-    text: [
-      'Complement proteins are a group of circulating molecules that form part of the innate immune system.',
-      'They enhance the ability of antibodies and phagocytes to clear pathogens by tagging invaders (opsonization), forming attack complexes, and amplifying inflammation.',
-      'In gameplay, they act as automatic defenses, weakening enemies passively or finishing them off after they’ve been marked by antibodies.',
-      '*Strengths:*',
-      'Works passively — no activation needed once triggered.',
-      'Can directly destroy some bacteria by punching holes in their membranes.',
-      'Boosts effectiveness of B cells and macrophages.',
-      '*Weaknesses:*',
-      'Cannot act alone — needs antibodies or pathogen markers to target accurately.',
-      'Limited against intracellular pathogens (viruses hiding inside cells).',
-      'Once depleted, takes time to regenerate.',
-    ]
-  }
 
 }
 
