@@ -37,7 +37,7 @@ export const allies = {
       'Limited sustained output — burns out in prolonged battles.',
       'Less effective against extracellular pathogens (like free-floating bacteria).',
     ],
-    battles: ['natural-killer-vs-cancer-cells'],
+    battles: ['NK-Handshake'],
   },
 
   "macrophages": {
@@ -266,153 +266,120 @@ export const allies = {
 export const pathogens = {
   "bacteria": {
     category: 'enemies',
+    architype: 'spider swarm',
     background: 'bacteria-card.png',
     text: [
-      'Bacteria are single-celled organisms that invade tissues, consume nutrients, and release harmful toxins.',
-      'Some multiply rapidly outside cells, while others hide inside immune cells to avoid detection.',
-      'Different strains can develop resistance to attacks, making them recurring threats.',
+      'The spider swarms known as bacteria creep and crawl into tissues, weaving webs of toxins and stealing precious nutrients from their host.',
+      'Some spin biofilm fortresses to shield themselves from attack, while others sneak inside immune cells, turning their own hunters into hiding spots.',
+      'They multiply with terrifying speed, overwhelming defenses before reinforcements can arrive.',
       '*Strengths:*',
-      'Fast reproduction — can overwhelm defenses quickly.',
-      'Variety of tactics (toxins, biofilms, hiding inside cells).',
-      'Some strains develop resistance to immune weapons.',
+      'Fast reproduction — can blanket the battlefield in overwhelming numbers.',
+      'Cunning tactics: toxins, biofilms, and stealth within host cells.',
+      'Many strains adapt quickly, becoming resistant to repeated attacks.',
       '*Weaknesses:*',
-      'Vulnerable to antibodies and phagocytosis once identified.',
-      'Cannot hide well from complement proteins or neutrophil swarms.',
-      'Certain antibiotics or immune boosts can wipe out entire colonies.',
+      'Vulnerable once marked by antibodies — easy prey for phagocytes.',
+      'Neutrophil swarms and complement blasts can devastate colonies.',
+      'Entire hordes can be wiped out by a well-aimed antibiotic strike.',
     ]
   },
 
   "viruses": {
     category: 'enemies',
+    architype: 'demon spirits',
     background: 'virus-card.png',
     text: [
-      'Viruses are genetic parasites that invade host cells and hijack them to replicate.',
-      'They are invisible to most immune defenses while inside cells but expose themselves briefly when traveling between hosts.',
-      'Different viruses mutate rapidly, allowing them to evade memory defenses over time.',
+      'Viruses are shapeshifting demon spirits that cannot live on their own. Instead, they possess host cells and force them to birth endless copies of their cursed essence.',
+      'While hidden inside a host, they are cloaked from most attacks, surfacing only briefly as they leap from one cell to another.',
+      'They are masters of mutation, constantly changing form to evade recognition by immune memory.',
       '*Strengths:*',
-      'Extremely small and stealthy — hides inside host cells.',
-      'Mutates quickly to bypass adaptive immunity.',
-      'Massive replication potential once inside a cell.',
+      'Stealthy — hides within host cells, invisible to most allies.',
+      'Mutates rapidly, slipping past even seasoned memory defenses.',
+      'Explosive replication once possession of a cell is complete.',
       '*Weaknesses:*',
-      'Cannot survive or reproduce outside a host cell.',
-      'Exposed during movement between cells (window for NK/T cell attack).',
-      'Strong antibody responses can neutralize them completely.',
+      'Helpless outside a host — cannot survive alone.',
+      'Exposed briefly during their jumps between cells.',
+      'Antibodies can bind and neutralize them entirely when targeted.',
     ]
   },
 
   "parasites": {
     category: 'enemies',
+    architype: 'monstrous beasts',
     background: 'parasite-card.png',
     text: [
-      'Parasites are large, complex invaders such as worms or protozoa that feed on host nutrients and tissues.',
-      'They trigger strong inflammatory responses and are often too big to be eaten by immune cells.',
-      'The immune system must rely on specialized cells and toxic proteins to drive them out.',
+      'Parasites are towering, grotesque beasts — worms, protozoa, and other monstrous invaders — that feast on the host’s blood and tissues.',
+      'Too massive to be eaten whole, they must be bombarded with toxic spells and cursed proteins until they retreat or die.',
+      'These beasts often twist the immune system’s signals, prolonging their stay and causing chaos within the battlefield.',
       '*Strengths:*',
-      'Massive size makes them resistant to phagocytosis.',
-      'Can manipulate host immune signals to prolong infection.',
-      'Difficult to completely eliminate — often require multiple attack strategies.',
+      'Massive size makes them impervious to engulfing attacks.',
+      'Manipulate immune signals to weaken or mislead defenders.',
+      'Difficult to fully eliminate — can return if not purged completely.',
       '*Weaknesses:*',
-      'Highly visible — immune cells detect them easily.',
-      'Susceptible to eosinophils and IgE-mediated responses.',
-      'Slow to reproduce compared to bacteria or viruses.',
-    ]
-  },
-
-  "fungi": {
-    category: 'enemies',
-    background: 'fungi-card.png',
-    text: [
-      'Fungi include molds and yeasts that can infect skin, lungs, or other tissues.',
-      'They often cause chronic infections in people with weakened immunity and form biofilms that resist attack.',
-      'Fungal cell walls are unique targets for immune weapons and antifungal drugs.',
-      '*Strengths:*',
-      'Can survive in hostile environments and form resilient biofilms.',
-      'Opportunistic — thrive when the immune system is distracted or weak.',
-      'Diverse forms (yeast, hyphae) make them adaptable.',
-      '*Weaknesses:*',
-      'Easily recognized by innate immune receptors (like macrophages).',
-      'Slow-growing compared to bacteria and viruses.',
-      'Susceptible to neutrophil and macrophage attacks when exposed.',
-    ]
-  },
-
-  "toxins": {
-    category: 'enemies',
-    background: 'toxin-card.png',
-    text: [
-      'Toxins are poisonous molecules released by certain bacteria and parasites to damage tissues or confuse immune cells.',
-      'They act independently of the pathogen itself, spreading damage even after the invader is gone.',
-      'Neutralizing toxins often requires rapid antibody response or detoxification systems.',
-      '*Strengths:*',
-      'Can harm multiple cells at once — area damage effect.',
-      'Acts quickly, even before the immune system detects the pathogen.',
-      'Persists after the pathogen is destroyed, causing prolonged damage.',
-      '*Weaknesses:*',
-      'Non-living — cannot adapt or reproduce.',
-      'Neutralized effectively by specific antibodies.',
-      'Dilution or rapid clearance reduces their potency over time.',
-    ]
-  },
-
-  "prions": {
-    category: 'enemies',
-    background: 'prion-card.png',
-    text: [
-      'Prions are misfolded proteins that spread by causing other proteins to misfold, leading to degenerative diseases.',
-      'They are resistant to most immune responses and can persist for years in tissues.',
-      'Prions do not trigger typical inflammation, making them stealthy and devastating.',
-      '*Strengths:*',
-      'Extremely resistant to immune destruction and most sterilization methods.',
-      'Can accumulate silently for long periods before symptoms appear.',
-      'Spread without traditional genetic material — hard to detect.',
-      '*Weaknesses:*',
-      'Spread very slowly compared to viruses or bacteria.',
-      'Do not actively evade immune cells — purely passive.',
-      'Few types exist, limiting their variety in battle.',
-    ]
-  },
-
-  "biofilm-clusters": {
-    category: 'enemies',
-    background: 'biofilm-card.png',
-    text: [
-      'Biofilms are fortified communities of bacteria encased in a sticky protective layer.',
-      'They form on surfaces like teeth, wounds, or implants, shielding bacteria from immune attacks and antibiotics.',
-      'Breaking through the biofilm requires coordinated assaults and persistent immune pressure.',
-      '*Strengths:*',
-      'Highly resistant to phagocytosis and antibodies.',
-      'Can regenerate even after partial destruction.',
-      'Releases bacteria slowly, sustaining long-term infection.',
-      '*Weaknesses:*',
-      'Immobile — must stay attached to surfaces.',
-      'Vulnerable to strong inflammatory responses once the barrier is breached.',
-      'Takes time to form — vulnerable in early stages.',
+      'Highly visible — impossible to sneak past vigilant defenders.',
+      'Fall to eosinophil wizards and IgE-charged attacks.',
+      'Slow breeders — gives time for allies to muster a coordinated strike.',
     ]
   },
 
   "cancer-cells": {
     category: 'enemies',
-    background: 'cancer-cell-card.png',
+    architype: 'mutant abominations',
+    background: 'cancer-card.png',
     text: [
-      'Cancer cells are mutated host cells that grow uncontrollably and evade normal immune surveillance.',
-      'They exploit "self" markers to hide from immune cells and secrete signals that suppress immune responses.',
-      'NK cells and cytotoxic T cells are primary defenders against them, but some cancers adapt to avoid detection entirely.',
+      'Cancer cells are host-born abominations — twisted, mutated echoes of normal cells that turn against their kin.',
+      'They hide behind false "self" banners, tricking the immune army into mistaking them for allies.',
+      'Relentless in growth, they spread without end, carving out new lairs of corrupted tissue.',
       '*Strengths:*',
-      'Uses "self" disguise — hard to detect as an enemy.',
-      'Rapid uncontrolled growth and invasion of tissues.',
-      'Can suppress or exhaust nearby immune cells.',
+      'Masters of disguise — often slip past the immune watch.',
+      'Grow rapidly and invade new territory unchecked.',
+      'Can emit signals that exhaust or silence nearby defenders.',
       '*Weaknesses:*',
-      'Vulnerable to activated NK cells and cytotoxic T cells.',
-      'Exposed when mutations remove normal "self" markers.',
-      'Targetable by antibodies or immune therapies when identified.',
+      'Vulnerable to NK assassins and cytotoxic T warriors once unmasked.',
+      'Exposed when mutations strip away their disguise.',
+      'Can be marked by antibodies and targeted with immune therapy strikes.',
     ]
-  }
+  },
+
+  "damaged-cells": {
+    category: 'enemies',
+    architype: 'fallen soldiers',
+    background: 'damaged-cell-card.png',
+    text: [
+      'Damaged cells are fallen soldiers of the body’s own army. Burnt out, injured, or corrupted by toxins, they stumble through the battlefield leaking distress signals.',
+      'Though not true enemies, their instability attracts pathogens and disrupts order, forcing immune allies to clear them away.',
+      '*Strengths:*',
+      'Emit loud distress flares (DAMPs) that summon immune reinforcements.',
+      'Can briefly hold pathogens at bay by sacrificing themselves.',
+      '*Weaknesses:*',
+      'Weakened — easy prey for invaders.',
+      'If not removed quickly, they feed inflammation and chaos.',
+      'Can inadvertently aid enemies by distracting defenders.',
+    ]
+  },
+
+  "senescent-cells": {
+    category: 'enemies',
+    architype: 'zombie horde',
+    background: 'senescent-card.png',
+    text: [
+      'Senescent cells are undead husks — old, broken cells that refuse to die. Instead of stepping aside, they linger, spewing toxic whispers (SASP signals) that poison nearby tissues.',
+      'Their zombified presence fuels chronic inflammation, weakens allies, and creates fertile ground for disease and cancerous growths.',
+      '*Strengths:*',
+      'Difficult to kill — resistant to normal cell death signals.',
+      'Spread chaos by releasing inflammatory toxins.',
+      'Can corrupt and weaken the battlefield over time.',
+      '*Weaknesses:*',
+      'Not aggressive fighters — deal no direct damage themselves.',
+      'Easily dispatched when targeted by NK cells or senolytic forces.',
+      'Their presence makes them beacons for immune hunters.',
+    ]
+  },
 }
 
 export const battles = {
-  "natural-killer-vs-cancer-cells": {
+  "NK-Handshake": {
     category: 'battle',
-    background: 'nk-vs-cancer.png',
+    background: 'nk-cancer-handshake.png',
     text: [
       'The natural killer cell gets up close and personal with a suspicious cell. If the cell does not greet the NKs hand shake satisfactory then the NK cell eliminates the defective / cancerous / infected cell.'
     ]

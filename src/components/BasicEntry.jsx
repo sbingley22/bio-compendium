@@ -40,8 +40,9 @@ function BasicEntry({ basicEntry, category }) {
       {entry.battles && entry.battles.map((battle, index) => {
         //console.log(battle, battles[battle])
         return (<Battles
-          key={"battle" + index}
+          key={battle}
           basicEntry={battle}
+          name={battle}
         />)
       })}
     </>

@@ -19,6 +19,9 @@
 
 .navigation {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
 h1 {
@@ -37,14 +40,18 @@ h1 {
 .main-categories button {
   margin: 2px;
   color: #ddf;
+  padding: 2px 10px;
+  font-size: 0.9rem;
 }
 
 .main-subjects {
-  margin: 10px;
+  margin: 2px;
   font-family: 'Courier New', Courier, monospace;
 }
 .main-subjects button {
   margin: 2px;
+  padding: 2px 8px;
+  border: 1px solid #333;
   color: #fed;
 }
 
