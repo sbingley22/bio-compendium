@@ -17,7 +17,8 @@ export const allies = {
       'Very short lifespan',
       'Not effective against viruses hiding inside cells.',
       'Large numbers needed for significant effect.',
-    ]
+    ],
+    battles: ['Neutrophil-Footsoldier', 'Neutrophil-Extracellular-Traps'],
   },
 
   "natural-killer": {
@@ -58,7 +59,8 @@ export const allies = {
       'Moderate attack speed and low burst damage.',
       'Can be overwhelmed by very large numbers of pathogens.',
       'Susceptible to certain pathogen evasion tactics (like TB hiding inside them).',
-    ]
+    ],
+    battles: ["Macrophage-Presenting"],
   },
 
   "eosinophils": {
@@ -78,7 +80,8 @@ export const allies = {
       'Weak against bacteria and viruses.',
       'Limited presence under normal conditions (activated mostly in allergies/parasites).',
       'Collateral damage risk — their toxins can harm surrounding tissues.',
-    ]
+    ],
+    battles: ["Eosinophil-Parasite"],
   },
 
   "basophils": {
@@ -98,7 +101,8 @@ export const allies = {
       'Low direct attack power.',
       'Effects can cause friendly fire (allergy-style overreactions).',
       'Rare in circulation — not always available for battle.',
-    ]
+    ],
+    battles: ['Basophil-Activated'],
   },
 
   "microglia": {
@@ -118,7 +122,8 @@ export const allies = {
       'Low offensive power — cannot fight directly.',
       'If destroyed or bypassed, the adaptive immune system is severely delayed.',
       'Vulnerable while migrating to lymph nodes with captured antigens.',
-    ]
+    ],
+    battles: [],
   },
 
   "dendritic-cells": {
@@ -138,7 +143,8 @@ export const allies = {
       'Fragile in direct combat — cannot fight enemies themselves.',
       'If intercepted or destroyed, the adaptive response is delayed.',
       'Vulnerable during their long journey to the lymph nodes.'
-    ]
+    ],
+    battles: ['Dendritic-Scouting'],
   },
 
   "b-plasma": {
@@ -155,7 +161,8 @@ export const allies = {
       'Slow to get going.',
       'Requires cytokine assistance from T cells to activate.',
       'Weak in direct combat',
-    ]
+    ],
+    battles: ['Bregs-After-Battle'],
   },
 
   "b-memory": {
@@ -171,7 +178,8 @@ export const allies = {
       'Memory B cells remember their target for fast action in future encounters with specific pathogens.',
       '*Weaknesses:*',
       'Only form after succesfully fighting the pathogen.',
-    ]
+    ],
+    battles: [],
   },
 
   "b-reg": {
@@ -186,7 +194,8 @@ export const allies = {
       'Prevent friendly fire',
       '*Weaknesses:*',
       'Weak in direct combat',
-    ]
+    ],
+    battles: ['Bregs-After-Battle'],
   },
 
   "t-helper": {
@@ -203,7 +212,8 @@ export const allies = {
       'Coordinates and boosts the power of B cells and other allies.',
       '*Weaknesses:*',
       'Requires activation by dendritic cells or other antigen-presenting cells.',
-    ]
+    ],
+    battles: ['T-Helper-Commanding', 'Macrophage-Presenting']
   },
 
   "t-cytotoxic": {
@@ -224,7 +234,8 @@ export const allies = {
       'Less numerous than other immune cells.',
       'Specialized activation requirements (lipid antigens).',
       'Not as potent in direct combat as cytotoxic T cells or NK cells.',
-    ]
+    ],
+    battles: ['T-Killer-Assassination'],
   },
 
   "t-regulators": {
@@ -243,7 +254,8 @@ export const allies = {
       'Weak in direct combat and cannot attack pathogens themselves.',
       'If suppressed, autoimmunity or uncontrolled inflammation can occur.',
       'Overuse can lead to weak immune responses, letting enemies thrive.',
-    ]
+    ],
+    battles: ["Treg-After-Battle"],
   },
 
   "t-memory": {
@@ -258,7 +270,8 @@ export const allies = {
       'Can quickly shut down a recurring pathogen',
       '*Weaknesses:*',
       'Needs to have succesfully fought the pathogen first'
-    ]
+    ],
+    battles: ['T-Memory-Re-Engaging'],
   },
 
 }
@@ -280,7 +293,8 @@ export const pathogens = {
       'Vulnerable once marked by antibodies — easy prey for phagocytes.',
       'Neutrophil swarms and complement blasts can devastate colonies.',
       'Entire hordes can be wiped out by a well-aimed antibiotic strike.',
-    ]
+    ],
+    battles: [],
   },
 
   "viruses": {
@@ -299,7 +313,8 @@ export const pathogens = {
       'Helpless outside a host — cannot survive alone.',
       'Exposed briefly during their jumps between cells.',
       'Antibodies can bind and neutralize them entirely when targeted.',
-    ]
+    ],
+    battles: ['Virus-Infecting-Cell', ]
   },
 
   "parasites": {
@@ -318,7 +333,8 @@ export const pathogens = {
       'Highly visible — impossible to sneak past vigilant defenders.',
       'Fall to eosinophil wizards and IgE-charged attacks.',
       'Slow breeders — gives time for allies to muster a coordinated strike.',
-    ]
+    ],
+    battles: ["Eosinophil-Parasite"],
   },
 
   "cancer-cells": {
@@ -337,7 +353,8 @@ export const pathogens = {
       'Vulnerable to NK assassins and cytotoxic T warriors once unmasked.',
       'Exposed when mutations strip away their disguise.',
       'Can be marked by antibodies and targeted with immune therapy strikes.',
-    ]
+    ],
+    battles: ['NK-Handshake'],
   },
 
   "damaged-cells": {
@@ -354,7 +371,8 @@ export const pathogens = {
       'Weakened — easy prey for invaders.',
       'If not removed quickly, they feed inflammation and chaos.',
       'Can inadvertently aid enemies by distracting defenders.',
-    ]
+    ],
+    battles: [],
   },
 
   "senescent-cells": {
@@ -372,17 +390,143 @@ export const pathogens = {
       'Not aggressive fighters — deal no direct damage themselves.',
       'Easily dispatched when targeted by NK cells or senolytic forces.',
       'Their presence makes them beacons for immune hunters.',
-    ]
+    ],
+    battles: [],
   },
 }
 
 export const battles = {
+
+  "Neutrophil-Footsoldier": {
+    category: 'battle',
+    background: 'neutrophils-arrive.png',
+    text: [
+      'The neutrophils are many in number, the most abundent immune cell of the body, and are the first to arrive at the battle. They charge to the enemy without thought and attack with brute force and high casualties.'
+    ],
+  },
+
+  "Neutrophil-Extracellular-Traps": {
+    category: 'battle',
+    background: 'neutrophil-extracellular-trap.png',
+    text: [
+      'The neutrophil, failing to effectively combat the invaders, lays down nets (neutrophil extracellular traps) to slow and trap the invaders as a last stand.'
+    ],
+  },
+
   "NK-Handshake": {
     category: 'battle',
     background: 'nk-cancer-handshake.png',
     text: [
       'The natural killer cell gets up close and personal with a suspicious cell. If the cell does not greet the NKs hand shake satisfactory then the NK cell eliminates the defective / cancerous / infected cell.'
     ]
-  }
+  },
+
+  "Basophil-Activated": {
+    category: 'battle',
+    background: 'basophil-activated.png',
+    text: [
+      'Upon recognising an IgE antigen, the macrophage releases his toxic chemicals and alerts other immune cells to the danger.'
+    ],
+  },
+
+  "Eosinophil-Parasite": {
+    category: 'battle',
+    background: 'eosinophil-parasite.png',
+    text: [
+      'The eosinophils are trained to fight a single type of pathogen, the parasite. They are the only ones that can do so effectively. It grabs a hold of the beast and uses its staff to drive granules into the parasites insides',
+    ],
+  },
+
+  "Macrophage-Presenting": {
+    category: 'battle',
+    background: 'macrophage-presenting.png',
+    text: [
+      'Macrophage eats a pathogen and presents a part of it (the antigen) to a T Helper Cell.'
+    ],
+  },
+
+  "Microglia-Surveillance": {
+    category: 'battle',
+    background: 'microglia-patroling.png',
+    text: [
+      'The microglia use their long tentacles to touch brain cells and check for damage, stress, infection, or need for pruning.',
+      'They are also looking for pathogens and other toxins or debris to consume.',
+    ]
+  },
+
+  "Dendritic-Scouting": {
+    category: 'battle',
+    background: 'dendritic-scouting.png',
+    text: [
+      'A dendritic scout discovers evidence of a pathogen and stores it in his histocompatibility complex (MHC) molecule then hurries off to report his findings to a T helper.'
+    ],
+  },
+
+  "Plasma-Cannon": {
+    category: 'battle',
+    background: '',
+    text: [
+      'The plasma cells main weapon is auto-antibodies which it is continuously shooting out of its cannon when activated. These antibodies weaken and slow pathogens as well as helping other immune cells attack what they attatch to.'
+    ],
+  },
+
+  "B-Memory-Multiplying": {
+    category: 'battle',
+    background: '',
+    text: [
+      'Memory Bs start multiplying as soon as they recognise an old foe.',
+    ],
+  },
+
+  "Bregs-After-Battle": {
+    category: 'battle',
+    background: 'breg-after-battle.png',
+    text: [
+      'The Bregs downregulate the plasma Bs antibody firing capacity one the battle is won.',
+    ],
+  },
+
+  "Treg-After-Battle": {
+    category: 'battle',
+    background: 'treg-after-battle.png',
+    text: [
+      'The Tregs lul the helper and killer Ts to sleep after battle, preventing them from causing unnecessary damage.'
+    ],
+  },
+
+  "T-Helper-Commanding": {
+    category: 'battle',
+    background: 't-helper-commanding.png',
+    text: [
+      'The scout Dendritic cell relays information about the invading pathogen to the Commander T Helper cell in the form of an antigen.',
+      'The T Helper then passed this information antigen to the T Killer cell and sends her on her way to the front line.'
+    ]
+  },
+
+  "T-Memory-Re-Engaging": {
+    category: 'battle',
+    background: 't-mem-multiplies.png',
+    text: [
+      'Memory T recognizes a bacteria she previously fought and starts rapidly producing fresh T cells specialized in killing that pathogen.'
+    ],
+  },
+
+  "T-Killer-Assassination": {
+    category: 'battle',
+    background: 't-killer-assassination.png',
+    text: [
+      'Killer T detects her target antigen during her MHC class I handshake with a cell infected with a virus.',
+      'She uses her perforin blade laced with granzymes to eliminate the pathogen.'
+    ],
+  },
+
+  "Virus-Infecting-Cell": {
+    category: 'battle',
+    background: 'virus-infecting-cell.png',
+    text: [
+      'The viraly infected cell becomes demon like and starts spitting out viral particles to nearby cells trying to infect them too.',
+      'If these previously healthy cells become overwhelmed by viral particles they too will turn into demon like viral cells and go on to infect others potentially creating a chain reaction.'
+    ],
+  },
 
 }

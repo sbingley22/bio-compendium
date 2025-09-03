@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import '../css/compendium.css'
-import { allies, pathogens, battles } from '../data/enteries'
+import { allies, pathogens, battles } from '../data/entries'
 import BasicEntry from "./BasicEntry"
 import Battles from './Battles'
 

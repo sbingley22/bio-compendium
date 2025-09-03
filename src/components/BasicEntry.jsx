@@ -1,5 +1,5 @@
 import '../css/compendium.css'
-import { allies, pathogens, battles } from '../data/enteries'
+import { allies, pathogens } from '../data/entries'
 import Battles from './Battles'
 
 function BasicEntry({ basicEntry, category }) {

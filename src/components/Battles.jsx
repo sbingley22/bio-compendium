@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../css/compendium.css'
-import { battles } from '../data/enteries'
+import { battles } from '../data/entries'
 
 const styles = {
   container: {
