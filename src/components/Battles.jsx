@@ -5,14 +5,18 @@ import { battles } from '../data/entries'
 const styles = {
   container: {
     width: "100%",
-    background: '#111',
-    border: '1px solid #333',
     margin: 0,
     padding: 0,
+    //borderTop: '4px solid #333',
+    borderBottom: '2px solid #333',
+    //borderLeft: '4px solid #333',
   },
   toggle: {
     width: "100%",
     color: '#999',
+    cursor: 'pointer',
+    padding: '0 20px',
+    textAlign: 'center',
   },
   content: {
     width: "100%",

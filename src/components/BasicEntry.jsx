@@ -2,6 +2,16 @@ import '../css/compendium.css'
 import { allies, pathogens } from '../data/entries'
 import Battles from './Battles'
 
+const styles = {
+  h3 : {
+    textAlign: 'center',
+    color: '#ac7',
+    margin: 0,
+    marginTop: '40px',
+    //borderTop: '4px solid #ac7',
+    border: '4px solid #ac7',
+  }
+}
 function BasicEntry({ basicEntry, category }) {
   let entry = null
   if (category === 'allies') entry = allies[basicEntry]
@@ -37,6 +47,7 @@ function BasicEntry({ basicEntry, category }) {
         </div>
       </div>
 
+      {entry.battles && <h3 style={styles.h3}>Examples</h3>}
       {entry.battles && entry.battles.map((battle, index) => {
         //console.log(battle, battles[battle])
         return (<Battles

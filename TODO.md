@@ -1,6 +1,8 @@
 To Do:  
 -Create battles for each cell type demonstrating their abilities.  
 -Adjust layouts for all device widths
+-Add comics category
+-Create at least one full comic showing an infection from start to finish, showing the role of as many immune cells as possible.
 
 Done:  
 -Create functionality for viewing pathogens, immune cells, and battles  

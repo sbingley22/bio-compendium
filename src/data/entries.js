@@ -123,7 +123,7 @@ export const allies = {
       'If destroyed or bypassed, the adaptive immune system is severely delayed.',
       'Vulnerable while migrating to lymph nodes with captured antigens.',
     ],
-    battles: [],
+    battles: ['Microglia-Surveillance'],
   },
 
   "dendritic-cells": {

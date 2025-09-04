@@ -32,7 +32,8 @@ function Compendium() {
         <div className='main-categories'>
           <button onClick={()=>handleSubjectClick('allies')}>Allies</button>
           <button onClick={()=>handleSubjectClick('enemies')}>Enemies</button>
-          <button onClick={()=>handleSubjectClick('battles')}>Battles</button>
+          <button onClick={()=>handleSubjectClick('battles')}>Scenarios</button>
+          <button onClick={()=>handleSubjectClick('comics')}>Comics</button>
         </div>
       </nav>
 
