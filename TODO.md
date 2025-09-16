@@ -3,6 +3,7 @@ To Do:
 -Adjust layouts for all device widths
 -Add comics category
 -Create at least one full comic showing an infection from start to finish, showing the role of as many immune cells as possible.
+-Make comics standalone html file. Link through iFrame.
 
 Done:  
 -Create functionality for viewing pathogens, immune cells, and battles  

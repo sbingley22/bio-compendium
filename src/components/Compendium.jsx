@@ -3,6 +3,7 @@ import '../css/compendium.css'
 import { allies, pathogens, battles } from '../data/entries'
 import BasicEntry from "./BasicEntry"
 import Battles from './Battles'
+import Comics from './Comics'
 
 function Compendium() {
   const [showSubject, setShowSubject] = useState(null)
@@ -80,6 +81,9 @@ function Compendium() {
                   name={formatted}
                 />)
             })
+          : showSubject === 'comics' ?
+            <Comics
+            />
           :
             <BasicEntry
               basicEntry={basicEntry}
