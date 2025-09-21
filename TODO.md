@@ -1,11 +1,11 @@
 To Do:  
--Create battles for each cell type demonstrating their abilities.  
 -Adjust layouts for all device widths
--Add comics category
--Create at least one full comic showing an infection from start to finish, showing the role of as many immune cells as possible.
--Make comics standalone html file. Link through iFrame.
 
 Done:  
+-Make comics standalone html file. Link through iFrame.
+-Create at least one full comic showing an infection from start to finish, showing the role of as many immune cells as possible.
+-Add comics category
+-Create battles for each cell type demonstrating their abilities.  
 -Create functionality for viewing pathogens, immune cells, and battles  
 -Create placeholder info for each entry  
 -Write down exactly the characteristics and design of each immune cell.  

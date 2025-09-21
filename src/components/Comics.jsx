@@ -1,7 +1,8 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 
 const comics = [
-  ["Strep Infection", "/html/strep-infection.html"]
+  ["Strep Infection", "/html/strep-infection.html"],
+  ["Biosea Alt universe", "/html/biosea.html"]
 ]
 
 function Comics({}) {
